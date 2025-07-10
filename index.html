@@ -5,9 +5,50 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* 깔끔한 폰트 적용 */
+            margin: 0;
+            padding: 20px; /* 본문 상하좌우 여백 추가 */
+            display: flex; /* flexbox를 사용해서 콘텐츠 정렬 */
+            flex-direction: column; /* 세로 방향으로 정렬 */
+            min-height: calc(100vh - 40px); /* 화면 전체 높이에서 패딩만큼 빼서 컨테이너 높이 설정 */
+            justify-content: center; /* 세로 방향으로 가운데 정렬 */
+            align-items: center; /* 가로 방향으로 가운데 정렬 */
+            text-align: center; /* 텍스트도 가운데 정렬 */
+        }
+
+        /* 기존 Hello, World! 문단 스타일 (선택 사항) */
+        p {
+            margin-bottom: 10px; /* 문단 아래 여백 추가 */
+        }
+
+        /* GitHub 버튼 스타일 */
+        .github-button {
+            background-color: #ff0000; /* 빨간색 배경 */
+            color: white; /* 흰색 글씨 */
+            padding: 15px 30px; /* 버튼 내부 여백 */
+            border: none; /* 테두리 없음 */
+            border-radius: 8px; /* 모서리 둥글게 */
+            cursor: pointer; /* 마우스 오버 시 손가락 모양 */
+            text-decoration: none; /* 링크 밑줄 제거 */
+            font-size: 18px; /* 글씨 크기 */
+            font-weight: bold; /* 글씨 굵게 */
+            transition: background-color 0.3s ease; /* 호버 효과 부드럽게 */
+            margin-top: 30px; /* 기존 내용과 버튼 사이에 여백 추가 */
+            display: inline-block; /* 링크를 버튼처럼 보이게 */
+        }
+
+        .github-button:hover {
+            background-color: #cc0000; /* 마우스 올렸을 때 더 어두운 빨간색 */
+        }
+    </style>
 </head>
 <body>
   <p>Hello, World!</p>
   <p>Hello, World!</p>
+
+  <!-- GitHub 이동 버튼 -->
+  <a href="https://github.com/robotmixmaster" class="github-button" target="_blank">내 GitHub 바로가기</a>
 </body>
 </html>
